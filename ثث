@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة صقر الخليج 2 | قطع غيار السيارات المستعملة</title>
+    <style>
+        /* تنسيق عام */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* الهيدر */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #004085;
+            color: white;
+            padding: 15px 20px;
+        }
+        header img {
+            height: 80px;
+            border-radius: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* القائمة الرئيسية */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #002752;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        /* المحتوى الرئيسي */
+        .container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container h2 {
+            color: #004085;
+            font-size: 28px;
+        }
+
+        /* تصميم نموذج الطلب */
+        .form-container {
+            max-width: 500px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            text-align: center;
+            color: #004085;
+            font-size: 22px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: none;
+        }
+        button {
+            background-color: #004085;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #002752;
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #002752;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        /* تحسين تجربة الهواتف */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <img src="https://i.postimg.cc/p9crjpG7/TY.png" alt="شعار مؤسسة صقر الخليج 2">
+        <h1>مؤسسة صقر الخليج 2</h1>
+    </header>
+
+    <!-- القائمة الرئيسية -->
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">الخدمات</a>
+        <a href="#">قطع الغيار</a>
+        <a href="#">التشليح</a>
+        <a href="#">آراء العملاء</a>
+        <a href="#">تواصل معنا</a>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        <h2>مرحبًا بكم في مؤسسة صقر الخليج 2!</h2>
+        <p>نحن متخصصون في بيع قطع الغيار المستعملة بجودة عالية وأسعار مناسبة.</p>
+        <p>تواصل معنا للحصول على أفضل العروض والخدمات.</p>
+
+        <!-- نموذج طلب قطع الغيار -->
+        <div class="form-container">
+            <h3>طلب قطع غيار</h3>
+            <form action="#" method="post">
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" placeholder="مثال: 0555555555" required>
+
+                <label for="car">نوع السيارة:</label>
+                <select id="car" name="car">
+                    <option value="تويوتا">تويوتا</option>
+                    <option value="نيسان">نيسان</option>
+                    <option value="هونداي">هونداي</option>
+                    <option value="فورد">فورد</option>
+                    <option value="شيفروليه">شيفروليه</option>
+                    <option value="أخرى">أخرى</option>
+                </select>
+
+                <label for="part">اسم القطعة المطلوبة:</label>
+                <input type="text" id="part" name="part" placeholder="أدخل اسم القطعة" required>
+
+                <label for="details">تفاصيل إضافية:</label>
+                <textarea id="details" name="details" rows="3" placeholder="أضف أي تفاصيل أخرى"></textarea>
+
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2025 مؤسسة صقر الخليج 2. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
