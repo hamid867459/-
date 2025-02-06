@@ -44,6 +44,33 @@
             padding: 20px;
             text-align: center;
         }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0275d8;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #025aa5;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -73,6 +100,29 @@
         <h2>مرحبًا بكم في مؤسسة صقر الخليج 2!</h2>
         <p>نحن متخصصون في بيع قطع الغيار المستعملة بجودة عالية وأسعار مناسبة.</p>
         <p>تواصل معنا للحصول على أفضل العروض والخدمات.</p>
+
+        <!-- نموذج طلب قطع الغيار -->
+        <div class="form-container">
+            <h3>طلب قطع غيار</h3>
+            <form action="#" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="car">نوع السيارة:</label>
+                <input type="text" id="car" name="car" required>
+
+                <label for="part">اسم القطعة المطلوبة:</label>
+                <input type="text" id="part" name="part" required>
+
+                <label for="details">تفاصيل إضافية:</label>
+                <textarea id="details" name="details" rows="3"></textarea>
+
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </div>
     </div>
 
     <footer>
